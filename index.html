@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-Brust</title>
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- tailwind custom classes -->
+    <script>
+      tailwind.config = {
+          theme: {
+              container: {
+                  center: true,
+              },
+              extend: {
+                  backgroundImage: {
+                      team: "url('./image/team.png')",
+                  },
+                  colors: {
+                      'primary-color': '#F85559',
+                      'team-work': '#121212',
+                  }
+              }
+          }
+      }
+  </script>
+    <!-- custom style -->
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-lato">
+  <header>
+    <!-- Navbar section start here -->
+    <nav class="container">
+        <div class="navbar text-white bg-primary-color rounded-full mt-1 p-2 md:p-6 justify-between">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+
+            </div>
+            <div class="navbar-center">
+                <img class="h-8 md:h-14" src="image/logo.png" alt="logo-fruit">
+                <a class="btn btn-ghost normal-case text-2xl md:text-4xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm text-primary-color dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <div class="form-control relative px-2 my-2">
+                            <input type="text" placeholder="Search" class="input h-auto rounded-full w-full" />
+                            <div class="absolute inset-y-0 right-5 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="form-control hidden lg:flex relative">
+                    <input type="text" placeholder="Search here" class="input rounded-full " />
+                    <div class="absolute inset-y-0 right-5 flex items-center pl-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Meet Team Section start here -->
+<section>
+  <section class="py-6 ">
+
+      <div class="hero container bg-team bg-team-work bg-blend-overlay bg-opacity-80 md:p-24">
+          <div class="hero-content text-center text-neutral-content">
+              <div class="space-y-8 ">
+                  <h2 class="md:text-5xl text-xl font-extrabold text-center">Meet the team section</h2>
+                  <p class="max-w-2xl mx-auto text-center">Contrary to popular belief, is not simply random
+                      text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                      years
+                      old.</p>
+                  <div class="flex flex-row flex-wrap justify-center">
+                      <!-- Member-1 here-->
+                      <div class="flex flex-col justify-center m-8 text-center min-w-[185px]">
+                          <img class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="./image/member1.png" alt="Awlad Hossain">
+                          <p class="text-2xl font-extrabold">Awlad Hossain</p>
+                          <p class="">Fruits Expert</p>
+                          <div class="flex mt-4 space-x-3 justify-center">
+                              <a rel="noopener noreferrer" href="#" title="Facebook" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full py-1 px-2 fa-facebook-f" style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="Twitter" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-twitter" style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="LinkedIn" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-linkedin-in" style="color: #ffffff;"></i></a>
+                          </div>
+                      </div>
+                      <!-- Member-2 here-->
+                      <div class="flex flex-col justify-center m-8 text-center min-w-[185px]">
+                          <img class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="./image/member2.png" alt="Safia Chowdhury">
+                          <p class="text-2xl font-extrabold">Safia Chowdhury</p>
+                          <p class="">Fruits Expert</p>
+                          <div class="flex mt-4 space-x-3 justify-center">
+                              <a rel="noopener noreferrer" href="#" title="Facebook" class="text-gray-600"> <i class="fa-brands bg-primary-color rounded-full py-1 px-2 fa-facebook-f" style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="Twitter" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-twitter"style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="LinkedIn" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-linkedin-in"style="color: #ffffff;"></i></a>
+                          </div>
+                      </div>
+                      <!-- Member-3 here-->
+                      <div class="flex flex-col justify-center m-8 text-center min-w-[185px]">
+                          <img class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="./image/member3.png" alt="Rokib Hossain">
+                          <p class="text-2xl font-extrabold">Rokib Hossain</p>
+                          <p class="">Fruits Expert</p>
+                          <div class="flex mt-4 space-x-3 justify-center">
+                              <a rel="noopener noreferrer" href="#" title="Facebook" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full py-1 px-2 fa-facebook-f"style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="Twitter" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-twitter"style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="LinkedIn" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-linkedin-in"style="color: #ffffff;"></i></a>
+                          </div>
+                      </div>
+                      <!-- Member-4 here-->
+                      <div class="flex flex-col justify-center m-8 text-center min-w-[185px]">
+                          <img class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="./image/member4.png" alt="Chaity">
+                          <p class="text-2xl font-extrabold">Chaity</p>
+                          <p class="">Fruits Expert</p>
+                          <div class="flex mt-4 space-x-3 justify-center">
+                              <a rel="noopener noreferrer" href="#" title="Facebook" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full py-1 px-2 fa-facebook-f"style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="Twitter" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-twitter"style="color: #ffffff;"></i></a>
+                              <a rel="noopener noreferrer" href="#" title="LinkedIn" class="text-gray-600"><i class="fa-brands bg-primary-color rounded-full p-1 fa-linkedin-in"style="color: #ffffff;"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </section>
+</section>
+    <main>
+
+    </main>
+    
+</body>
+</html>
